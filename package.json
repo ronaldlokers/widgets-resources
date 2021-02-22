@@ -24,7 +24,8 @@
     "build": "lerna run build --ignore @widgets-resources/utils-react-widgets",
     "publish": "ts-node --project ./scripts/tsconfig.json ./scripts/release/Release.ts",
     "release": "lerna run release --ignore @widgets-resources/utils-react-widgets",
-    "version": "ts-node --project ./scripts/tsconfig.json ./scripts/release/BumpVersion.ts"
+    "version": "ts-node --project ./scripts/tsconfig.json ./scripts/release/BumpVersion.ts",
+    "validate:version": "lerna run validate:version --ignore @widgets-resources/utils-react-widgets --stream"
   },
   "devDependencies": {
     "@commitlint/cli": "^11.0.0",
