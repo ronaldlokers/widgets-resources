@@ -22,6 +22,28 @@ exports[`BarcodeScanner renders 1`] = `
 </View>
 `;
 
+exports[`BarcodeScanner renders with auto focus disabled 1`] = `
+<View
+  style={
+    Object {
+      "flex": 1,
+      "flexDirection": "column",
+      "minHeight": 100,
+    }
+  }
+>
+  <View
+    style={
+      Object {
+        "alignItems": "center",
+        "flex": 1,
+        "justifyContent": "center",
+      }
+    }
+  />
+</View>
+`;
+
 exports[`BarcodeScanner renders with mask 1`] = `
 <View
   style={

@@ -16,6 +16,7 @@ describe("BarcodeScanner", () => {
         defaultProps = {
             showAnimatedLine: false,
             showMask: false,
+            autoFocus: true,
             name: "barcode-scanner-test",
             style: [],
             barcode: new EditableValueBuilder<string>().build()
@@ -24,6 +25,12 @@ describe("BarcodeScanner", () => {
 
     it("renders", () => {
         const component = render(<BarcodeScanner {...defaultProps} />);
+
+        expect(component.toJSON()).toMatchSnapshot();
+    });
+
+    it("renders with auto focus disabled", () => {
+        const component = render(<BarcodeScanner {...defaultProps} autoFocus={false} />);
 
         expect(component.toJSON()).toMatchSnapshot();
     });
