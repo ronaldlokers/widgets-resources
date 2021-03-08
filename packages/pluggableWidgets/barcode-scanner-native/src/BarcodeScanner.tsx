@@ -23,6 +23,7 @@ export class BarcodeScanner extends Component<Props> {
                     style={{ flex: 1, justifyContent: "center", alignItems: "center" }}
                     captureAudio={false}
                     onBarCodeRead={this.onBarCodeReadHandler}
+                    autoFocus={this.props.autoFocus ? "on" : "off"}
                 >
                     {this.props.showMask && (
                         <BarcodeMask
